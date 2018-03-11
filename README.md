@@ -31,6 +31,19 @@ a project that keep backup windows system.
 3. 打开主机的文件夹共享（需要先添加网络设备，贴子中没有提到但是没有添加网络设备无法成功出现网络位置的共享文件夹）。
 4. 同样的拍一下快照备份一下。
 
+###   3.封装前的设置
+参考帖子
+>  [十分钟学会win10系统封装之系列教程（三）：系统封装前的优化与清理](http://www.yishimei.cn/computer/712.html)
+
+1. 设置NAT网络，并用激活工具激活windows。
+> [VMware设置NAT网络](https://jingyan.baidu.com/article/e8cdb32b4217e737052baddb.html)
+
+2. 调出系统图标, 更新系统
+3. 禁用“IE保护模式”和“SmartScreen筛选”
+4. 服务优化
+
+
+
 
 
 TODO：
