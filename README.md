@@ -42,15 +42,16 @@ a project that keep backup windows system.
 3. 禁用“IE保护模式”和“SmartScreen筛选”
 4. 服务优化
 
+### 4.系统封装
+参考帖子
+>  [十分钟学会win10系统封装之系列教程（四）：软件部署安装与系统封装的完全阶段](http://www.yishimei.cn/computer/713.html)
 
-
-
+## 二. 安装后的自动部署
 
 TODO：
 1. 系统安装完成后自动生成目录结构
-2. 自动安装驱动， 运行库， 软件
+2. 自动安装软件
 3. 自动部署开发环境
-
 
 #### 其他地址
 1. [最全的微软msdn原版windows系统镜像和office下载地址集锦](http://www.yishimei.cn/network/290.html)
