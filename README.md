@@ -51,6 +51,7 @@ a project that keep backup windows system.
 TODO：
 1. 系统安装完成后自动生成目录结构
 2. 自动安装软件
+    windows installer
 3. 自动部署开发环境
 
 #### 其他地址
