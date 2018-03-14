@@ -46,12 +46,47 @@ a project that keep backup windows system.
 参考帖子
 >  [十分钟学会win10系统封装之系列教程（四）：软件部署安装与系统封装的完全阶段](http://www.yishimei.cn/computer/713.html)
 
+。。。continue
+
 ## 二. 安装后的自动部署
+
+### 软件的自动安装
+
+#### 1. windows installer
+一开始的idea就是把所有待安装的软件下载下来，然后用一个`.bat`脚本安装，通过文件夹进行软件更新存放。
+并通过注册表修改默认的安装位置。
+
+> [操作Windows注册表的简单的Python程序制作教程](http://www.jb51.net/article/63644.htm)
+
+查了一下发现利用windows的静默安装很繁杂，每个软件都有不同的项目参数，不符合项目目标。
+
+参考帖子
+
+这是一篇比较实用的帖子。
+> [Windows批处理：自动部署常用软件（静默安装）](https://www.cnblogs.com/sjy000/archive/2015/09/01/4775334.html)
+
+其他关于静默安装的帖子
+> [操作Windows注册表的简单的Python程序制作教程](http://www.360doc.com/content/14/1021/22/4171006_418800746.shtml)
+
+> [常用软件的静默安装参数](http://blog.51cto.com/htxmn/1592511)
+
+> [【静默参数大全】静默安装参数调用，静默查询操作方法](http://www.hx74.cn/content/?102.html)
+
+附加四种安装类型的帖子
+> [Windows软件静默安装](https://www.cnblogs.com/toor/p/4198061.html)
+
+> [Installshield之静默安装](http://www.cnblogs.com/sabrinahuang/archive/2009/08/09/1542427.html)
+
+> [inno setup命令行安装卸载参数](http://www.dingniu8.com/article/html/30386.html)
+
+#### 2. Chocolatey - 更适合现代的安装方法
+> 这是一个基于powershell的windows下命令行安装软件的工具，和linux系统一样只需要简单一行就可以安装软件。
+
+> [Chocolatey的安装地址（英）]（https://chocolatey.org/install）
+
 
 TODO：
 1. 系统安装完成后自动生成目录结构
-2. 自动安装软件
-    windows installer
 3. 自动部署开发环境
 
 #### 其他地址
