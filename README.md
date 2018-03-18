@@ -1,7 +1,14 @@
 # windows-sys-backup
 a project that keep backup windows system.
 
-> 这个项目保证系统重装后更轻松部署
+> 这个项目保证全新计算机的部署更轻松以及备份主机
+
+捣鼓了两周左右的经验之谈。
+## 目录
+[开始之前](#开始之前)
+
+## 开始之前
+
 
 ##  一. 系统封装
 
