@@ -73,8 +73,7 @@ a project that keep install and backup windows system simple.
 5. 卸载系统激活软件，删除C盘里的残余软件。
 6. 关闭了不需要的服务（如家庭组），更改账户安全为从不通知，启用远程协助。
 
-> 其他优化参考这里，各取所需。
-
+> 其他优化参考这里，各取所需。 [我的服务优化脚本](./bat/services.bat)
 > 1. [Win10优化系统服务的技巧](http://www.xitongzhijia.net/xtjc/20161108/86811.html)
 > 2. [Windows10必做的优化](https://jingyan.baidu.com/article/c843ea0ba3d01377931e4a3d.html)
 > 3. [史上最全win10优化大全 助你电脑升级后如飞！](http://ee.ofweek.com/2015-07/ART-11000-2808-28985416.html)
