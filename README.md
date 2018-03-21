@@ -48,7 +48,7 @@ a project that keep install and backup windows system simple.
 
 1. 安装压缩软件2345好压。（也可以是其他解压软件主要用于解压其他压缩包,已经解压也可以不使用）
 2. 在C盘建立`Tools`文件夹，把驱动助理放到里面，安装运行库。
-3. 修改[`system.ini`](./bat/mkdir.bat)文件，让系统更好利用内存。
+3. 修改[`system.ini`](./system.ini)文件，让系统更好利用内存。
 4. 修改注册表，把系统按照自己习惯进行个性化并优化系统。
 5. 千万不要忘记移除USB控制器，卸载`VMware Tools`并重启，拍摄快照备份系统。
 
@@ -67,39 +67,24 @@ a project that keep install and backup windows system simple.
 >参考贴子  [十分钟学会win10系统封装之系列教程（三）：系统封装前的优化与清理](http://www.yishimei.cn/computer/712.html)
 
 
+### 系统封装
 
-## 系统备份
+1. 打开Easysprep，进行设置之后封装之后关机
+2. 进入pe系统，打开软件进入第二部分，完成相应设置之后开始第二部分封装
+3. 使用装机工具生成win文件。
+4. 重新安装工具将备份文件拷到电脑里。
+5.使用ultraISO将win文件替换掉win10安装包里的install.win并另存为。
 
-
-
-
-
-
-
-
-
-
+这样一个属于你自己的系统盘就做好了，可以做成启动光盘或者U盘下次使用。
+> 参考帖子 [十分钟学会win10系统封装之系列教程（四）：软件部署安装与系统封装的完全阶段](http://www.yishimei.cn/computer/713.html)
 
 
 
+## 安装后的自动部署
 
-###   2. 准备工作
+### 电脑目录的部署
 
-###   3.封装前的设置
-参考帖子
->  [十分钟学会win10系统封装之系列教程（三）：系统封装前的优化与清理](http://www.yishimei.cn/computer/712.html)
 
-2. 调出系统图标, 更新系统
-3. 禁用“IE保护模式”和“SmartScreen筛选”
-4. 服务优化
-
-### 4.系统封装
-参考帖子
->  [十分钟学会win10系统封装之系列教程（四）：软件部署安装与系统封装的完全阶段](http://www.yishimei.cn/computer/713.html)
-
-。。。continue
-
-## 二. 安装后的自动部署
 
 ### 软件的自动安装
 
@@ -135,11 +120,33 @@ a project that keep install and backup windows system simple.
 
 > [Chocolatey的安装地址（英）]（https://chocolatey.org/install）
 
+### 未来的发展方向
 
-TODO：
-1. 系统安装完成后自动生成目录结构
-3. 自动部署开发环境
+1. 熟悉使用`Wox`软件之后，减少桌面图标加快系统进程。
+2. 安装完官方镜像之后，直接使用`Python`程序更改注册表及安装软件等实现自动部署。（程序中带有出错判断保证安全和稳健）
+3. 制作自己个性化的`Windows To Go`系统。
 
-#### 其他地址
+## 系统备份
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## 其他地址
 1. [最全的微软msdn原版windows系统镜像和office下载地址集锦](http://www.yishimei.cn/network/290.html)
 2. [Windows10专业版、企业版、教育版各版本的区别](http://www.xitongtiandi.net/wenzhang/win10/16011.html)
