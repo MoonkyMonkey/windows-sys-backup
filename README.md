@@ -1,4 +1,6 @@
-#  windows-sys-backup（制作属于你自己的windows安装介质）
+#  windows-sys-backup
+（制作属于你自己的windows安装介质）
+
 a project that keep install and backup windows system simple.
 
 > 这个项目保证全新计算机的部署和系统备份更轻松
@@ -52,7 +54,7 @@ a project that keep install and backup windows system simple.
 
 1. 安装压缩软件2345好压。（也可以是其他解压软件主要用于解压其他压缩包,已经解压也可以不使用）
 2. 在C盘建立`Tools`文件夹，把驱动助理放到里面，安装运行库（也可以放在C盘封装的时候选择安装,安装完需要删除缓存文件）。
-3. 修改[`system.ini`](./system.ini)文件，让系统更好利用内存。
+3. 修改[`system.ini`](/system.ini)文件，让系统更好利用内存。
 4. 修改注册表或者组策略（也可以直接在安装完系统之后保存用户配置），把系统按照自己习惯进行个性化并优化系统。
 5. 千万不要忘记移除USB控制器，卸载`VMware Tools`并重启，拍摄快照备份系统。
 
@@ -64,7 +66,7 @@ a project that keep install and backup windows system simple.
 > 4. [修改win10 注册表 让任务栏中搜索/任务按钮彻底消](http://bbs.ithome.com/thread-640561-1-1.html)
 > 5. [win10此电脑六个文件夹怎么删除](https://jingyan.baidu.com/article/48a42057ec84a3a924250498.html)
 > 6. [从Windows10的资源管理器里面删除OneDrive图标](https://jingyan.baidu.com/article/19192ad805da1ee53e570720.html)
-> 6. [如何修改默认安装路径.比如在C:\WINDOWS改到D:\WINDOWS](https://zhidao.baidu.com/question/581811023.html)
+> 7. [如何修改默认安装路径.比如在C:\WINDOWS改到D:\WINDOWS](https://zhidao.baidu.com/question/581811023.html)
 
 #### 个性化和优化 
 1. 去除`人脉`，`多任务`图标，只显示`contana`图标，把`此电脑`，`控制面板`图标放在桌面。
@@ -111,7 +113,7 @@ a project that keep install and backup windows system simple.
 
     一般我的习惯就是电脑里面有固定的存放位置，所以目录结构基本相同可以写一个脚本文件自动生成。
     
-[我的目录生成脚本](./bat/mkdir.bat)
+[我的目录生成脚本](/bat/mkdir.bat)
 
 ### 软件的自动安装
 
@@ -122,8 +124,6 @@ a project that keep install and backup windows system simple.
 #### 1. windows installer
 一开始的idea就是把所有待安装的软件下载下来，然后用一个`.bat`脚本安装，通过文件夹进行软件更新存放。
 并通过注册表修改默认的安装位置。
-
-> [操作Windows注册表的简单的Python程序制作教程](http://www.jb51.net/article/63644.htm)
 
 参考帖子：
 
@@ -140,10 +140,18 @@ a project that keep install and backup windows system simple.
 > 2. [Installshield之静默安装](http://www.cnblogs.com/sabrinahuang/archive/2009/08/09/1542427.html)
 > 3. [inno setup命令行安装卸载参数](http://www.dingniu8.com/article/html/30386.html)
 
-#### 2. Chocolatey - 更适合现代的安装方法
+#### 2. Chocolatey - 更适合懒人的安装方式
+
 > 这是一个基于powershell的windows下命令行安装软件的工具，和linux系统一样只需要简单一行就可以安装软件。
 
 > [Chocolatey的安装地址（英）]（https://chocolatey.org/install）
+
+[我的chocolatey安装和软件安装脚本](/bat/Program.bat)
+
+`chocolatey`的安装路径就是注册表中程序的目录，所以可以通过修改默认目录更改安装位置，`windows`安装包也是一样。
+> [如何修改默认安装路径.比如在C:\WINDOWS改到D:\WINDOWS](https://zhidao.baidu.com/question/581811023.html)
+
+> [操作Windows注册表的简单的Python程序制作教程](http://www.jb51.net/article/63644.htm)
 
 ### 未来的发展方向
 
@@ -175,3 +183,4 @@ a project that keep install and backup windows system simple.
 ## 其他地址
 1. [最全的微软msdn原版windows系统镜像和office下载地址集锦](http://www.yishimei.cn/network/290.html)
 2. [Windows10专业版、企业版、教育版各版本的区别](http://www.xitongtiandi.net/wenzhang/win10/16011.html)
+
