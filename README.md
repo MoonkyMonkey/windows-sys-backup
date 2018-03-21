@@ -64,6 +64,7 @@ a project that keep install and backup windows system simple.
 > 4. [修改win10 注册表 让任务栏中搜索/任务按钮彻底消](http://bbs.ithome.com/thread-640561-1-1.html)
 > 5. [win10此电脑六个文件夹怎么删除](https://jingyan.baidu.com/article/48a42057ec84a3a924250498.html)
 > 6. [从Windows10的资源管理器里面删除OneDrive图标](https://jingyan.baidu.com/article/19192ad805da1ee53e570720.html)
+> 6. [如何修改默认安装路径.比如在C:\WINDOWS改到D:\WINDOWS](https://zhidao.baidu.com/question/581811023.html)
 
 #### 个性化和优化 
 1. 去除`人脉`，`多任务`图标，只显示`contana`图标，把`此电脑`，`控制面板`图标放在桌面。
@@ -84,29 +85,39 @@ a project that keep install and backup windows system simple.
 
 ### 系统封装
 
+> 需要工具 `EasySysprep_4.5` + PE系统ISO文件 + `UltraISO`  
+
 1. 打开`EasySysprep_4.5`，进行封装的第一阶段。
 * 封装选项：用户，组织，工作组选填，网络位置自己选择，保持系统选项四个勾选。
 * 用户账户：选择第二个，`OOBD时手动创建账户`。
 * 自动封装：封装完成后`关闭计算机`选项。
-> 如果想使用administrator或者直接使用封装的账号具体看参考帖子
-2. 进入pe系统，打开软件进入第二部分，完成相应设置之后开始第二部分封装
+> 如果想使用`administrator`或者直接使用封装的账号具体看参考帖子。
+2. 进入PE系统，打开软件进入第二部分封装。
+* 
 
-3. 使用装机工具生成win文件。
-4. 重新安装工具将备份文件拷到电脑里。
-5.使用ultraISO将win文件替换掉win10安装包里的install.win并另存为。
+
+3. PE系统中使用装机工具生成win系统文件。
+4. 重新安装`VMware Tools`将系统文件拷到主机里。
+5.使用`ultraISO`将`windows安装包`里的`install.win`（需要把`win`文件改为同名）替换掉并另存为生成自己的安装包。
 
 这样一个属于你自己的系统盘就做好了，可以做成启动光盘或者U盘下次使用。
+
 > 参考帖子 [十分钟学会win10系统封装之系列教程（四）：软件部署安装与系统封装的完全阶段](http://www.yishimei.cn/computer/713.html)
 
-
-
+>参考贴子  [win10封装的技巧与教程大全](http://blog.sina.com.cn/s/blog_e51759cd0102x6hg.html)
 ## 安装后的自动部署
 
 ### 电脑目录的部署
 
-
+    一般我的习惯就是电脑里面有固定的存放位置，所以目录结构基本相同可以写一个脚本文件自动生成。
+    
+[我的目录生成脚本](./bat/mkdir.bat)
 
 ### 软件的自动安装
+
+查了一下发现利用windows中主要有四种不同的安装包，每种安装包格式都有不同的静默安装参数，所以全部软件使用这个方式安装还是很难的。
+另一种就是使用`chocolatey`（windows系统的命令行安装软件工具），缺点就是国内一些常用软件没有安装包，下载速度也不够快，但是编程
+软件齐全，适合无人值守自己慢慢安装好软件更方便，所以就两个工具配合安装软件。
 
 #### 1. windows installer
 一开始的idea就是把所有待安装的软件下载下来，然后用一个`.bat`脚本安装，通过文件夹进行软件更新存放。
@@ -114,26 +125,20 @@ a project that keep install and backup windows system simple.
 
 > [操作Windows注册表的简单的Python程序制作教程](http://www.jb51.net/article/63644.htm)
 
-查了一下发现利用windows的静默安装很繁杂，每个软件都有不同的项目参数，不符合项目目标。
-
-参考帖子
+参考帖子：
 
 这是一篇比较实用的帖子。
 > [Windows批处理：自动部署常用软件（静默安装）](https://www.cnblogs.com/sjy000/archive/2015/09/01/4775334.html)
 
 其他关于静默安装的帖子
-> [操作Windows注册表的简单的Python程序制作教程](http://www.360doc.com/content/14/1021/22/4171006_418800746.shtml)
-
-> [常用软件的静默安装参数](http://blog.51cto.com/htxmn/1592511)
-
-> [【静默参数大全】静默安装参数调用，静默查询操作方法](http://www.hx74.cn/content/?102.html)
+> 1. [操作Windows注册表的简单的Python程序制作教程](http://www.360doc.com/content/14/1021/22/4171006_418800746.shtml)
+> 2. [常用软件的静默安装参数](http://blog.51cto.com/htxmn/1592511)
+> 3. [【静默参数大全】静默安装参数调用，静默查询操作方法](http://www.hx74.cn/content/?102.html)
 
 附加四种安装类型的帖子
-> [Windows软件静默安装](https://www.cnblogs.com/toor/p/4198061.html)
-
-> [Installshield之静默安装](http://www.cnblogs.com/sabrinahuang/archive/2009/08/09/1542427.html)
-
-> [inno setup命令行安装卸载参数](http://www.dingniu8.com/article/html/30386.html)
+> 1. [Windows软件静默安装](https://www.cnblogs.com/toor/p/4198061.html)
+> 2. [Installshield之静默安装](http://www.cnblogs.com/sabrinahuang/archive/2009/08/09/1542427.html)
+> 3. [inno setup命令行安装卸载参数](http://www.dingniu8.com/article/html/30386.html)
 
 #### 2. Chocolatey - 更适合现代的安装方法
 > 这是一个基于powershell的windows下命令行安装软件的工具，和linux系统一样只需要简单一行就可以安装软件。
