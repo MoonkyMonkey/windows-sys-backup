@@ -31,7 +31,7 @@ a project that keep install and backup windows system simple.
 4. BIOS设置需要 `disabled` 掉 `Legacy Diskette A` I/O设备选项中的 `Serail port A`  `Serail port B` `Parallet port`  `Floppy disk controller` 然后改变启动项顺序进行dvd安装系统。
 5. 系统安装完成后`Ctrl+shift+F3`进入系统，需要用虚拟机拍一下快照。（我安装完之后出现安装错误的窗口，只需要点确认就可以继续安装无需理会错误）
 
-（由于其中一个补丁的原因，更新了最新win10系统之后就卡在全屏的个性化设置然后桌面黑屏的问题， 之后进行了系统修复，虽然修复成功了但是电脑蓝屏次数变得十分频繁不得已开始这个项目）
+        由于系统升级之后其他一个补丁的原因，出现更新完成系统卡在全屏的个性化设置然后桌面黑屏的问题， 虽然通过系统修复成功打开系统但是电脑蓝屏次数变得十分频繁不得已开始这个项目。
 
 ## 全新系统
 
