@@ -144,7 +144,7 @@ a project that keep install and backup windows system simple.
 
 > 这是一个基于powershell的windows下命令行安装软件的工具，和linux系统一样只需要简单一行就可以安装软件。
 
-> [Chocolatey的安装地址（英）]（https://chocolatey.org/install）
+> [Chocolatey的安装地址（英）]（https://chocolatey.org/docs/installation）
 
 [我的chocolatey安装和软件安装脚本](/bat/Program.bat)
 
