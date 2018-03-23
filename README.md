@@ -50,6 +50,9 @@ a project that keep install and backup windows system simple.
 > 附上安装过程部分截图
 
 ![](/pic/安装程序.png "安装程序")
+
+> 选择自定义，之后格式化C盘再选C盘点击下一步。
+
 ![](/pic/安装位置.png "安装位置")
 ![](/pic/安装盘.png "安装盘")
 ![](/pic/安装完成.png "安装完成")
