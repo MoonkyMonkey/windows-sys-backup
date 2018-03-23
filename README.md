@@ -45,7 +45,19 @@ a project that keep install and backup windows system simple.
 2. 为了封装系统的兼容性，将`USB控制器`、`声卡`、`打印机`全部移除，如果有`网络适配器`也要移除，然后点击`确定`。
 3. 使用分区工具分区后再点击下拉箭头的`打开电源时进入固件`。
 4. BIOS设置需要 `disabled` 掉 `Legacy Diskette A` I/O设备选项中的 `Serail port A`  `Serail port B` `Parallet port`  `Floppy disk controller` ，然后改变启动项顺序使用`CD-driver`安装系统。
+![](/pic/bios1.png "bios")
+
+> 附上安装过程部分截图
+
+![](/pic/安装程序.png "安装程序")
+![](/pic/安装位置.png "安装位置")
+![](/pic/安装盘.png "安装盘")
+![](/pic/安装完成.png "安装完成")
+
 5. 系统安装完成后`Ctrl+shift+F3`进入系统，用虚拟机拍一下快照备份。（我安装完之后出现安装错误的窗口，只需要点确认就可以继续安装无需理会错误）
+
+![](/pic/错误.png "错误")
+![](/pic/桌面.png "桌面")
 
         由于系统升级之后其他一个补丁的原因，出现更新完成系统卡在全屏的个性化设置然后桌面黑屏的问题， 虽然通过系统修复成功打开系统但是电脑蓝屏次数变得十分频繁不得已开始这个坑。
 
@@ -55,7 +67,12 @@ a project that keep install and backup windows system simple.
 
 1. 开始菜单 -> 右键点击设置 -> 计算机管理 -> 本地用户和组 -> 解除`administrator`账户的禁用。
 2. 在虚拟机设置中添加`usb控制器`，把需要的软件放入U盘然后与虚拟机共享（一般得把U盘弹出之后在虚拟机右下角图标找到U盘并右键连接）
+
+![](/pic/USB控制器.png "USB控制器")
+
 3. 安装`VMware Tools`与机子共享U盘。（不使用映射映射磁盘是因为添加了网络适配器之后会联网会自动更新导致无法封装）
+
+![](/pic/安装Tools.png "安装Tools")
 
 > 若安装`VMware Tools`之后依然无法与主机共享剪切板与U盘等一般是需要重启虚拟机服务，可以执行[重启虚拟机服务脚本](./bat/虚拟机服务重启.bat)不懂自行百度。
 
