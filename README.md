@@ -220,6 +220,7 @@ a project that keep install and backup windows system simple.
 ### 备份
 
 进入PE系统之后使用装机工具直接备份在电脑上其他磁盘即可。
+![](/pic/备份.png "备份")
 
 ### 未来的展望
 
