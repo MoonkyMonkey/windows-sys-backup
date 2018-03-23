@@ -1,0 +1,2 @@
+PR文件的缓存 C:\Users\a9521\AppData\Roaming\Adobe\Common\Media Cache Files
+软件包缓存 C:\ProgramData\Package Cache
