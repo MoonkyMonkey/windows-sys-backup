@@ -69,6 +69,9 @@ a project that keep install and backup windows system simple.
 ### 共享文件
 
 1. 开始菜单 -> 右键点击设置 -> 计算机管理 -> 本地用户和组 -> 解除`administrator`账户的禁用。
+
+![](/pic/管理员账户.png "管理员账户")
+
 2. 在虚拟机设置中添加`usb控制器`，把需要的软件放入U盘然后与虚拟机共享（一般得把U盘弹出之后在虚拟机右下角图标找到U盘并右键连接）
 
 ![](/pic/USB控制器.png "USB控制器")
@@ -89,6 +92,9 @@ a project that keep install and backup windows system simple.
 3. 修改[`system.ini`](/system.ini)文件，让系统更好利用内存。
 4. 修改注册表或者组策略（也可以直接在安装完系统之后保存用户配置），把系统按照自己习惯进行个性化并优化系统。
 5. 千万不要忘记移除USB控制器，卸载`VMware Tools`并重启，拍摄快照备份系统。
+
+![](/pic/组策略1.png "组策略1")
+![](/pic/组策略2.png "组策略2")
 
 > 注册表文件太大了无法上传，以下是参考的帖子。
 
